@@ -22,3 +22,15 @@ rate: 5%
 10 years
 final balance: 1320.68
 """
+annual = int(input("Enter your annual investment "))
+rate = int(input("Enter interest rate "))
+rate = (rate/100)+1
+years = int(input("Enter how many years "))
+folder = annual
+wait = 0
+while wait != years:
+
+    annual = folder +(annual*rate)
+    wait = wait+1
+annual = round(annual-folder,2)
+print (annual)

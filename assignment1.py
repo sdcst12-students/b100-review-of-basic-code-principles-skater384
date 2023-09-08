@@ -13,3 +13,16 @@ Your program should ask the user for
 * The program will calculate the amount of interest earned and display it.
 * Appropriate formatting of the output is a requirement for this assignment
 """
+a = int(input ("Enter your initial investment "))
+b = int(input ("Enter your interest rate as a percentage "))
+b = (b/100)
+c = int(input("Enter the length of investment "))
+d = str(input("Years, Months, or Days? "))
+if d == "Months":
+  c = (c/12)
+  print(f"{a}*{b}*{c} = {a*b*c}$")
+elif d == "Days":
+    c = (c/365)
+    print(f"{a}*{b}*{c} = {a*b*c}$")
+elif d == "Years":
+      print(f"{a}*{b}*{c} = {a*b*c}$")
